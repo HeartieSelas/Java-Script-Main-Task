@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+</head>
+<body>
+
+    <section>
+
+        <div class="login-box">
+            <form action="">
+                <h2>Login Form</h2>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" placeholder="Enter Your Mail id" id="contact-email" onkeyup="validateEmail()">
+                    <span id="email-error"></span>
+                    <label for="">Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" placeholder="Enter Your Password" id="enter-password" onkeyup="validatePassword()">
+                    <span id="password-error"></span>
+                    <label for="">Password</label>
+                </div>
+
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox">Remember Me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                    <div class="register-link">
+                        <a href="To Do List.html" target="_blank"><button type="button" onclick="location.href='To Do List.html'">Login</button></a>
+                        <span id="submit-error"></span>
+                    </div>
+
+                <div class="register-link">
+                    <p>Don't have an account? <a href="sign up.html" target="_blank">Sign Up</a></p>
+                </div>
+
+
+            </form>
+        </div>
+
+    </section>
+
+    
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
